@@ -70,18 +70,15 @@ Extensive experimental results validate that the proposed KGT outperforms state-
 <img src = "./figs/sr.png" width=2000> 
 </details>
 
-
 <details>
 <summary><strong>Single-Image Motion Deblurring</strong> (click to expand) </summary>
 
 <img src = "./figs/deblurring.png" width=1000> 
 </details>
 
-
 ## Temperal Documents
-
-
-
+- Results: https://docs.google.com/spreadsheets/d/1CNYEl93Tt1l70QC1WmFbgHzCBPtxCOHR7Me6bnGW3M8/edit?usp=sharing
+- Slides: https://docs.google.com/presentation/d/1re1ig1lB24shemfcUK5F1buk66zS01xlUms1rrLviNc/edit#slide=id.p 
 
 ## Citation
 
