@@ -6,7 +6,7 @@ By Bin Ren*, Yawei Li*, Jingyun Liang, Rakesh Ranjan, Mengyuan Liu, Rita Cucchia
 ## News :fire:
 - [ ] The ...
 
-## Coming Soon
+## Coming Soon :t-rex:
 - [ ] The ...
 
 ## Introduction
@@ -19,7 +19,6 @@ Extensive experimental results validate that the proposed KGT outperforms state-
 
 ## How to Use the Code?
 - Environments Preparation:
-  
   1. `conda create -n LightningIR python=3.8`
   2. `conda activate LightningIR`
   3. `pip install -r requirements.txt`
@@ -38,46 +37,50 @@ Extensive experimental results validate that the proposed KGT outperforms state-
 
 ## Results
 <details>
+<summary><strong>JPEG Compression Artifact Removal</strong> (click to expand) </summary>
+<img src = "./figs/jpeg_car_grayscale.png" width=2000>
+<img src = "./figs/jpeg_car_color.png" width=2000> 
+</details>
+
+
+<details>
 <summary><strong>Image denoising</strong> (click to expand) </summary>
 
-<img src = "./figs/task3.png" width=2000> 
+<img src = "./figs/color_grayscale_denoising.png" width=2000> 
 </details>
 
-<details>
-<summary><strong>Image SR</strong> (click to expand) </summary>
-
-<img src = "./figs/task4.png" width=2000> 
-</details>
-
-<details>
-<summary><strong>Single-Image Motion Deblur</strong> (click to expand) </summary>
-
-<img src = "./figs/task1.png" width=1000> 
-</details>
-
-<details>
-<summary><strong>Defocus Deblur</strong> (click to expand) </summary>
-
-<img src = "./figs/task2.png" width=2000> 
-</details>
-
-<details>
-<summary><strong>JPEG Compression Artifact Removal</strong> (click to expand) </summary>
-
-<img src = "./figs/task5.png" width=2000> 
-</details>
 
 <details>
 <summary><strong>Image Demosaicking</strong> (click to expand) </summary>
 
-<img src = "./figs/task6.png" width=1000> 
+<img src = "./figs/demosaicking.png" width=1000> 
 </details>
+
 
 <details>
-<summary><strong>Real-World Image SR</strong> (click to expand) </summary>
+<summary><strong>Adverse Weather Conditions Restoration</strong> (click to expand) </summary>
 
-<img src = "./figs/task7.png" width=1000> 
+<img src = "./figs/adverse_weather_conditions.png" width=1000> 
 </details>
+
+
+<details>
+<summary><strong>Image SR</strong> (click to expand) </summary>
+
+<img src = "./figs/sr.png" width=2000> 
+</details>
+
+
+<details>
+<summary><strong>Single-Image Motion Deblurring</strong> (click to expand) </summary>
+
+<img src = "./figs/deblurring.png" width=1000> 
+</details>
+
+
+## Temperal Documents
+
+
 
 
 ## Citation
