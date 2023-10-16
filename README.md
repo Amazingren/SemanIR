@@ -1,7 +1,16 @@
-# KGT for Image Restoration
-This repository is an official implementation of the paper Key-Graph Transformer for Image Restoration.
+# Key-Graph Transformer for Image Restoration
+This repository is an official implementation of the paper Key-Graph Transformer (KGT) for Image Restoration.
 
-By Bin Ren*, Yawei Li*, Jingyun Liang, Rakesh Ranjan, Mengyuan Liu, Rita Cucchiara, Luc Van Gool, Nice Sebe.
+[Bin Ren](https://scholar.google.com/citations?hl=en&user=Md9maLYAAAAJ)<sup>1,2,3</sup>$^\star$, [Yawei Li](https://scholar.google.com/citations?user=IFLsTGsAAAAJ&hl=en)<sup>3</sup>$^\star$, [Jingyun Liang](https://scholar.google.com/citations?user=3-Hz9BgAAAAJ&hl=en)<sup>3</sup>, Rakesh Ranjan<sup>4</sup>, [Mengyuan Liu](https://scholar.google.com/citations?hl=en&user=woX_4AcAAAAJ)<sup>5</sup>, [Rita Cucchiara](https://scholar.google.com/citations?user=OM3sZEoAAAAJ&hl=en)<sup>6</sup>, and [Luc Van Gool](https://scholar.google.com/citations?user=TwMib_QAAAAJ&hl=en)<sup>3</sup>, and [Nicu Sebe](https://scholar.google.com/citations?user=stFCYOAAAAAJ&hl=en)<sup>2</sup> <br>
+$\star$: Equal Contribution, $\dagger$: Corresponding Author <br>
+<sup>1</sup>University of Pisa, Italy, <br>
+<sup>2</sup>University of Trento, Italy, <br> 
+<sup>3</sup>ETH Zürich, Switzerland, <br>
+<sup>4</sup>Meta Reality Labs, <br>
+<sup>5</sup>Peking University, China <br>
+<sup>6</sup>University of Modena and Reggio Emilia, Italy, <br>
+
+
 
 ## News :fire:
 - [ ] The ...
@@ -87,10 +96,8 @@ If this work is helpful for your research, please consider citing the following 
 ```
 @inproceedings{li2023grl,
   title={Key-Graph Transformer for Image Restoration},
-  author={Bin Ren*, Yawei Li*, Jingyun Liang, Rakesh Ranjan, Mengyuan Liu, Rita Cucchiara, Luc Van Gool, and Nice Sebe},
+  author={Bin Ren, Yawei Li, Jingyun Liang, Rakesh Ranjan, Mengyuan Liu, Rita Cucchiara, Luc Van Gool, and Nice Sebe},
   booktitle={xxx},
   year={2023}
 }
 ```
-
-*: Co-first Authors
