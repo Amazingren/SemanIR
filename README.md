@@ -1,14 +1,18 @@
 # Key-Graph Transformer for Image Restoration
 This repository is an official implementation of the paper Key-Graph Transformer (KGT) for Image Restoration.
 
-[Bin Ren](https://scholar.google.com/citations?hl=en&user=Md9maLYAAAAJ)<sup>1,2,3</sup>$^\star$, [Yawei Li](https://scholar.google.com/citations?user=IFLsTGsAAAAJ&hl=en)<sup>3</sup>$^\star$, [Jingyun Liang](https://scholar.google.com/citations?user=3-Hz9BgAAAAJ&hl=en)<sup>3</sup>, Rakesh Ranjan<sup>4</sup>, [Mengyuan Liu](https://scholar.google.com/citations?hl=en&user=woX_4AcAAAAJ)<sup>5</sup>, [Rita Cucchiara](https://scholar.google.com/citations?user=OM3sZEoAAAAJ&hl=en)<sup>6</sup>, and [Luc Van Gool](https://scholar.google.com/citations?user=TwMib_QAAAAJ&hl=en)<sup>3</sup>, and [Nicu Sebe](https://scholar.google.com/citations?user=stFCYOAAAAAJ&hl=en)<sup>2</sup> <br>
-$\star$: Equal Contribution, $\dagger$: Corresponding Author <br>
-<sup>1</sup>University of Pisa, Italy, <br>
-<sup>2</sup>University of Trento, Italy, <br> 
-<sup>3</sup>ETH Zürich, Switzerland, <br>
-<sup>4</sup>Meta Reality Labs, <br>
-<sup>5</sup>Peking University, China <br>
-<sup>6</sup>University of Modena and Reggio Emilia, Italy, <br>
+[Bin Ren](https://scholar.google.com/citations?hl=en&user=Md9maLYAAAAJ)<sup>1,2,3</sup>$^\star$, [Yawei Li](https://scholar.google.com/citations?user=IFLsTGsAAAAJ&hl=en)<sup>4</sup>$^\dagger$, [Jingyun Liang](https://scholar.google.com/citations?user=3-Hz9BgAAAAJ&hl=en)<sup>4</sup>, Rakesh Ranjan<sup>5</sup>, [Mengyuan Liu](https://scholar.google.com/citations?hl=en&user=woX_4AcAAAAJ)<sup>6</sup>, [Rita Cucchiara](https://scholar.google.com/citations?user=OM3sZEoAAAAJ&hl=en)<sup>7</sup>, [Luc Van Gool](https://scholar.google.com/citations?user=TwMib_QAAAAJ&hl=en)<sup>3</sup>, [Ming-Hsuan Yang](https://scholar.google.com/citations?user=p9-ohHsAAAAJ&hl=en)<sup>8</sup>, and
+ [Nicu Sebe](https://scholar.google.com/citations?user=stFCYOAAAAAJ&hl=en)<sup>2</sup> <br>
+$\star$: Work done during visiting at ETH Zurich and INSAIT Sofia University. <br>
+$\dagger$: Project Leader \& Corresponding Author. Email: li.yawei.ai@gmail.com <br>
+<sup>1</sup>University of Pisa, Italy <br>
+<sup>2</sup>University of Trento, Italy <br> 
+<sup>3</sup>UINSAIT, Sofia University, BG <br> 
+<sup>4</sup>ETH Zürich, Switzerland <br>
+<sup>5</sup>Meta Reality Labs <br>
+<sup>6</sup>Peking University, China <br>
+<sup>7</sup>University of Modena and Reggio Emilia, Italy <br>
+<sup>8</sup>University of California, Merced <br>
 
 
 
@@ -19,12 +23,8 @@ $\star$: Equal Contribution, $\dagger$: Corresponding Author <br>
 - [ ] The ...
 
 ## Introduction
-It is widely acknowledged that capturing non-local information among input images is crucial for effective image restoration (IR). 
-However, fully incorporating such global cues into transformer-based methods can be computationally expensive, particularly when dealing with large input images or patches. 
-Furthermore, it is assumed that the attention mechanism within the transformer considers numerous unnecessary cues from unrelated objects or regions. In response to these challenges, we introduce the K-Graph Transformer (KGT) for IR in this paper. Specifically, KGT treats image features within a given window as the nodes of a graph. 
-Instead of establishing connections among all the nodes, the proposed K-Graph Constructor creates a sparse yet representative K-Graph that connects only the essential nodes flexibly. 
-Then the K-Graph Attention Block is proposed within each KGT layer to conduct the self-attention operation only among these selected nodes with linear computational complexity.
-Extensive experimental results validate that the proposed KGT outperforms state-of-the-art methods on various benchmark datasets both quantitatively and qualitatively.
+Image Restoration (IR), a classic low-level vision task, has witnessed significant advancements through deep models that effectively model global information. Notably, the emergence of Vision Transformers (ViTs) has further propelled these advancements. When computing, the self-attention mechanism, a cornerstone of ViTs, tends to encompass all global cues, even those from semantically unrelated objects or regions. This inclusivity introduces computational inefficiencies, particularly noticeable with high input resolution, as it requires processing irrelevant information, thereby impeding efficiency. Additionally, for IR, it is commonly noted that small segments of a degraded image, particularly those closely aligned semantically, provide particularly relevant information to aid in the restoration process, as they contribute essential contextual cues crucial for accurate reconstruction. 
+To address these challenges, we propose boosting IR's performance by sharing the key semantics via Transformer for IR (\ie, SemanIR) in this paper. Specifically, SemanIR initially constructs a sparse yet comprehensive key-semantic dictionary within each transformer stage by establishing essential semantic connections for every degraded patch. Subsequently, this dictionary is shared across all subsequent transformer blocks within the same stage. This strategy optimizes attention calculation within each block by focusing exclusively on semantically related components stored in the key-semantic dictionary. As a result, attention calculation achieves linear computational complexity within each window. Extensive experiments across 6 IR tasks confirm the proposed SemanIR's state-of-the-art performance, quantitatively and qualitatively showcasing advancements.
 
 ## How to Use the Code?
 - Environments Preparation:
